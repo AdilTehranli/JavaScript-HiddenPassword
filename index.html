@@ -25,7 +25,7 @@
                 <form action="" class="d-flex">
                     <div class="inputs">
 
-                        <input type="password" class="form-control" id="inp">
+                        <input type="password" class="form-control" onkeyup="check()" id="inp">
                         <div class="icons">
                             <i class="fa-solid fa-eye " id="icon" onclick="show()"></i>
     
@@ -33,6 +33,7 @@
                     </div>
                     <button  class="btn btn-success btn-sm ms-3" id="btn">Submit</button>
                 </form>
+                <span class="badge bg-danger" id="text"></span>
             </div>
         </div>
     </div>

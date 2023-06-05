@@ -15,3 +15,14 @@ function show(){
         
     }
 }
+function check(){
+    let inp=document.getElementById('inp');
+    let text=document.getElementById('text');
+    if(inp.value.length>8){
+        text.innerHTML='Strong';
+        text.className  ='badge bg-success';
+    }else{
+        text.innerHTML='Less than 8 letters'
+        text.className='badge bg-danger'
+    }
+}
